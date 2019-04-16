@@ -1,0 +1,24 @@
+$colors: (
+    primary: #005dff,
+    accent: #fff6bb
+);
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+
+    #bg{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 46% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 46% 100%, 0 100%);
+        background-color: map-get($map: $colors, $key: primary);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+}
